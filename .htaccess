@@ -1,0 +1,6 @@
+Options -Indexes
+
+ErrorDocument 403 /bledy/403.html
+ErrorDocument 404 /bledy/404.html
+ErrorDocument 503 /bledy/503.html
+ErrorDocument 500 /bledy/500.html

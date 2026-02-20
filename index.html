@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pytanieiodpowiedz.pl</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="start_section">
+        <h1>Pytanie I Odpowiedz</h1>
+        <h3>Proste odpowiedzi na częste pytania</h3>
+        <p>Pytanie i Odpowiedź to strona, na której znajdziesz krótkie, konkretne odpowiedzi na pytania, które ludzie naprawdę zadają. Bez straszenia i lania wody.</p>
+    </section>
+
+
+
+
+    <section id="najnowsze_posty_section">
+        <div id="najnowsze_posty">
+            <h3>Nasze 5 najnowszych postów</h3>
+
+            <div id="najnowsze_posty_tabela">
+                1. <a href="pytanie/czy-wentylacja-grawitacyjna-jest-obowiazkowa.html">Czy wentylacja grawitacyjna jest obowiązkowa?</a> <br><br>
+                2. <a href="pytanie/czy-piec-gazowy-moze-sie-sam-ulatniac.html">Czy piec gazowy może się sam ulatniać?</a> <br><br>
+                3. <a href="pytanie/czy-czujnik-czadu-wykryje-gaz.html">Czy czujnik czadu wykryje gaz?</a> <br><br>
+                4. <a href="pytanie/dlaczego-czujnik-czadu-piszczy-bez powodu.html">Dlaczego czujnik czadu piszczy bez powodu?</a> <br><br>
+                5. <a href="pytanie/czy-gaz-to-to-samo-co-czad.html">Czy gaz z pieca to to samo co czad?</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="formularz_kontaktowy_section">
+        <h3>Formularz kontaktowy</h3>
+        <form action="https://formsubmit.co/kontakt@pytanieiodpowiedz.pl" method="POST">
+        <input type="text" name="imie" id="imie" placeholder="  Imię" class="pole_form" class="pole_form_input" required> <br>
+        <input type="email" name="email" id="email" placeholder="  E-mail" class="pole_form" class="pole_form_input" required> <br>
+
+        <textarea name="wiadomosc" id="wiadomosc" rows="10" class="pole_form_textarea" placeholder=" Wpisz wiadomość" required></textarea> <br>
+
+        <input value="Wyślij" type="submit" id="submit">
+
+        <input type="hidden" name="_next" value="https://pytanieiodpowiedz.pl/dziekujemy.html">
+        <input type="hidden" name="_subject" value="Nowa wiadomość!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+
+    </form>
+
+    <p>
+        Jeśli wolisz kontakt mailowy, napisz do nas na <b>kontakt@pytanieiodpowiedz.pl</b>
+    </p>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        © <span id="year"></span> PytanieiOdpowiedz.pl. Wszelkie prawa zastrzeżone. <br>
+        <a href="politykaprywatnosci.html">
+            Polityka Prywatności
+        </a>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
