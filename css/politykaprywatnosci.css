@@ -1,8 +1,82 @@
-body {
-    background-color: whitesmoke;
-    font-family: Arial, sans-serif;
-    text-align: center;
+﻿@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap");
+
+:root {
+  --bg: #f2f7f5;
+  --surface: #ffffff;
+  --text: #14231f;
+  --muted: #4d625b;
+  --line: #d7e6df;
+  --brand: #0f766e;
+  --brand-strong: #0b5f59;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --shadow: 0 20px 40px rgba(15, 118, 110, 0.12);
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 28px 20px;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(15, 118, 110, 0.15), transparent 42%),
+    linear-gradient(180deg, #f8fffd 0%, var(--bg) 100%);
+}
+
+body > div {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+a {
+  color: var(--brand-strong);
+}
+
+h1 {
+  margin: 10px 0 18px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+}
+
+#polityka {
+  text-align: left;
+}
+
 .polityka-podpunkt {
-    margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: #f8fbfa;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.polityka-podpunkt b {
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 16px 12px;
+  }
+
+  body > div {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .polityka-podpunkt {
+    padding: 12px;
+  }
 }

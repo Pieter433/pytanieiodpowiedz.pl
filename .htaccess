@@ -1,4 +1,5 @@
 Options -Indexes
+AddDefaultCharset UTF-8
 
 ErrorDocument 403 /bledy/403.html
 ErrorDocument 404 /bledy/404.html
